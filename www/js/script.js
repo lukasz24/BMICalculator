@@ -9,36 +9,20 @@ $(document).ready(function(){
     const bmiScore = $('#bmi');
     const wagaInput = $('#waga');
     const wzrostInput = $('#wzrost');
-    screen.screenOrientation.lock(screen.screenOrientation.ORIENTATIONS.PORTRAIT);
+    
 
     calculateButton.on('click', function(){
         if((wzrostInput.is(':empty') )|| wagaInput.is(':empty')){
             toast('Niektóre pola są puste!',600);
         }else{
-            bmiScore.html();
+            let bmi = wagaInput.val()/(wzrostInput*wzrostInput/10000);
+            bmiScore.html(bmi);
             goToSite('scorePage');
             toast('123',600);
-        }
-        toast('Niektóre pola są puste!',600);
-    });
+        }        
+    });    
 
-
-    const emailInput = $('#email');
-    const passInput = $('#haslo');
-    const btnLogIn = $('#zaloguj');
-    const btnGLogIn = $("#zalogujG");
-    const btnFBLogIn = $("#zalogujFB");
-    const btnRegis = $("#zarejestruj");
-    var info = $('#logInfo');
-
-    emailInput.on('focus', function(){
-		$(this).css("box-shadow", "none");
-	});
-
-    passInput.on('focus', function(){
-		$(this).css("box-shadow", "none");
-	});
-
+});
 
 var toast = function(msg, time){
     $("<div class='ui-loader ui-overlay-shadow ui-body-e ui-corner-all'><h3>"+msg+"</h3></div>")
@@ -55,5 +39,3 @@ var toast = function(msg, time){
         $(this).remove();
     });
 };   
-
-});

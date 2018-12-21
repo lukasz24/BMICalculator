@@ -8,6 +8,9 @@
     
     width: 100%;
 }
+.btn-mg-top {
+    margin-top:15px !important
+}
 
 #padder {
     margin-bottom: 15px;
