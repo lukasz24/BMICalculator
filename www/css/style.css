@@ -15,3 +15,11 @@
 #padder {
     margin-bottom: 15px;
 }
+
+.bmi {
+    font-weight: bold;
+}
+
+#bmiOpis {
+    text-align: center;
+}
