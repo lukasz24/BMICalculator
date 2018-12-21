@@ -12,10 +12,11 @@
     </platform>    
     
     <preference name="SplashScreen" value="screen"/>    
-    <preference name="SplashScreenDelay" value="2000" />
+    <preference name="SplashScreenDelay" value="3500" />
 
     <preference name="AndroidLaunchMode" value="singleTask" />
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
+    <plugin name="cordova-plugin-screen-orientation" spec="3.0.1" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="cordova-plugin-device" spec="~2.0.2" />
     <plugin name="cordova-plugin-buildinfo" spec="~2.0.1" />
