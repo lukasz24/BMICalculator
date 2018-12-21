@@ -1,0 +1,14 @@
+.img {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.img > img {
+    
+    width: 100%;
+}
+
+#padder {
+    margin-bottom: 15px;
+}

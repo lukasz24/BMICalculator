@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="cordova.js"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>   
+        <script src="js/jquery-2.1.4.min.js"></script>     
+        <script type="text/javascript" src="js/script.js"></script>
+        
+    </head>
+    <body>
+        <!-- Start page -->
+        <div data-role="page" id="startPage">
+            <div data-role="main" class="ui-content">
+                <div class="ui-field-contain" id="glownyst">
+                	<div class="img">
+                    	<img src="img/wieszak-koszulka.jpg" id="tabela-bmi">
+                    </div>                    
+                    <label for="wzrost">Podaj wzrost</label><input type="number" placeholder="Wzrost" id="wzrost" class="padder"/>                    
+                    <label for="waga">Podaj wagę</label>
+                    <input type="number" placeholder="Waga" id="waga" class="padder"/>  
+                    <button class="ui-btn ui-corner-all" id="calculateButton" style="margin-top:15px">OBLICZ BMI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Score page -->
+        <div data-role="page" id="scorePage">
+        	<div data-role="header" class="header">
+                <a href="#startPage" class="ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-notext backbutt"></a>
+                <h1>Wynik</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div class="ui-field-contain" id="scorDiv">
+                	<p>Twoje BMI:</p>
+                	<p id="bmi"></p>
+                	<div class="img">
+                    	<img src="img/tabela-bmi.png" id="tabela-bmi">                    
+                    </div>	
+                </div>
+            </div>
+        </div>
+      
+        
+    </body>
+</html>
