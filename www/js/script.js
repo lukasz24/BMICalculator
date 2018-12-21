@@ -34,16 +34,16 @@ function calculateBMI(bmiInp, waga, wzrost){
     let bmiOpis = $('#bmiOpis');
 
     if(bmi < 18.5){
-        bmiInp.css("color", "lightblue");
-        bmiOpis.css("color", "lightblue");
+        bmiInp.css("color", "blue");
+        bmiOpis.css("color", "blue");
         bmiOpis.text("Niedowaga");
     }else if(18.5 <= bmi && bmi < 25){
         bmiInp.css("color", "green");
         bmiOpis.css("color", "green");
         bmiOpis.text("Waga prawidłowa - GRATULUJĘ!");
     }else if(25 <= bmi && bmi < 30){
-        bmiInp.css("color", "yellow");
-        bmiOpis.css("color", "yellow");
+        bmiInp.css("color", "orange");
+        bmiOpis.css("color", "orange");
         bmiOpis.text("Nadwaga");
     }else if(30 <= bmi){
         bmiInp.css("color", "red");
